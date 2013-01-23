@@ -1,0 +1,256 @@
+#main{
+	#nav{
+		width: 236px;
+		float: left;
+		#logo-section{
+			padding: 6px 0;
+			padding-left: 16px;
+			height: 31px;
+			line-height: 31px;
+			border-bottom: 1px solid #EBEBEB;
+			a{
+				font-size: 20px;
+			}
+		}
+	}
+	#chrome{
+		margin-left: 236px;
+	}
+}
+#chrome-viewer-containter{
+	width: 100%;
+}
+#viewer-header-container{
+	border-bottom: 1px solid #EBEBEB;
+	#viewer-header{
+		margin-right: 13px;
+		height: 43px;
+		background: white;
+		color: #333;
+		position: relative;
+	}
+}
+#viewer-top-controls-container{
+	position: absolute;
+	top: 50%;
+	height: 27px;
+	margin-top: -14px;
+	width: 100%;
+	padding: 0 3px 3px;
+}
+#add-source-section{
+	height: 57px;
+	position: relative;
+}
+#add-source-button{
+	position: absolute;
+	top: 50%;
+	left: 13px;
+	margin-top: -13px;
+}
+.item{
+	line-height: 30px;
+	padding-left: 13px;
+	font-size: 13px;
+	a{
+		color: #333;
+	}
+}
+.item.selected{
+	border-left: 3px solid #DD4B39;
+	a{
+		color: #D14836;
+	}
+}
+#source-list{
+	margin: 0;
+	padding: 0;
+	li{
+		list-style: none;
+		padding-left: 13px;
+		line-height: 25px;
+		font-size: 13px;
+		a{
+			color: #333;
+		}
+	}
+	li.current{
+		border-left: 3px solid #DD4B39;
+		a{
+			color: #D14836;
+		}
+	}
+}
+
+#viewer-entries-container{
+	overflow-x: hidden;
+	overflow: visible;
+	overflow-y: auto;
+	position: relative;
+}
+#title-and-status-holder{
+	margin-right: 16px;
+	padding: 1ex 0 .5ex .5em;
+	overflow: hidden;
+}
+#chrome-title{
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	padding-bottom: 1px;
+	float: left;
+}
+#entries{
+	padding: 0 10px 0 5px;
+	border-top: 1px solid #EBEBEB;
+	height: 300px;
+	z-index: 1;
+	zoom: 1;
+	outline: 0;
+	.entry{
+		padding: 0;
+		margin: 0;
+		border-bottom: solid 1px #CCC;
+		overflow: hidden;
+		.collapsed {
+			border-left: solid 1px white;
+			padding: 0;
+			background: white;
+			
+			zoom: 1;
+			margin: 0;
+			overflow: hidden;
+			width: auto;
+			position: relative;
+			.checkbox{
+				float: left;
+				position: absolute;
+				top: 50%;
+				left: 4px;
+				margin-top: -10px;
+			}
+			.entry-title,.entry-date,.entry-source-title{
+				font-size: 13px;
+				cursor: pointer;
+			}
+			.entry-date{
+				margin-right: 2.3em;
+				float: right;
+				text-align: right;
+				line-height: 27px;
+			}
+			.entry-main{
+				float: none;
+				margin: 0;
+				padding: 0;
+				zoom: 1;
+				margin-right: 5em;
+			}
+			.entry-original{
+				height: 14px;
+				background-repeat: no-repeat;
+				white-space: normal;
+				float: none;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				width: 1.2em;
+				z-index: 2;
+				top: 50%;
+				margin-top: -8px;
+				right: .5em;
+			}
+			.entry-source-title{
+				color: #555;
+				font-size: 100%;
+				padding: 0 1em 0 0;
+				overflow: hidden;
+				display: block;
+				width: 11em;
+				white-space: nowrap;
+				position: absolute;
+				left: 1.85em;
+				line-height: 27px;
+			}
+			.entry-secondary{
+				color: #777;
+				white-space: normal;
+				width: auto;
+				overflow: hidden;
+				position: absolute;
+				padding: 0 0 0 1px;
+				margin: 0 7em 0 11em;
+				left: 0;
+				.entry-title{
+					position: static;
+					margin: 0;
+					padding: 0;
+					width: auto;
+					display: inline;
+					line-height: 27px;
+					color: #000000;
+					max-width: 650px;
+				}
+			}
+			.entry-secondary.no-source-title{
+				margin-left: 3em;
+			}
+		}
+
+		.entry-container{
+			border-left: solid 1px #4D90F0;
+			padding-top: .5em;
+			padding-left: 1em;
+			position: relative;
+			padding-bottom: .5em;
+			zoom: 1;
+			h2.entry-title{
+				color: #15C;
+				font-size: 18px;
+				line-height: 20px;
+			}
+			.entry-body{
+				padding-top: .5em;
+			}
+			.input-title,.text-content{
+				width: 90%;
+			}
+		}
+		.entry-action{
+			display: block;
+			background: #FAFAFA;
+			border-left: solid 1px white;
+			border-top: 1px solid #EBEBEB;
+			padding: 6px 0 6px 7px;
+			left: 0;
+			border-left: solid 1px #4D90F0;
+			padding-bottom: 6px;
+
+		}
+	}
+	.entry.expanded{
+		.collapsed{
+			background: #eee;
+			border-left: solid 1px #4D90F0;
+		}
+	}
+	.entry.readed{
+		.collapsed{
+			background: #eee;
+		}
+	}
+}
+.message-area-container{
+	position: absolute;
+	left: 50%;
+	width: 500px;
+	top: 0;
+	margin-left: -250px;
+	z-index: 1000;
+}
+#scrollable-sections-holder{
+	overflow-y:auto;
+	height: 500px; 
+}
