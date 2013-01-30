@@ -247,3 +247,12 @@
   overflow-y: auto;
   height: 500px;
 }
+input.ding {
+  width: 30px;
+}
+.status {
+  float: left;
+  margin-left: 350px;
+  height: 44px;
+  line-height: 44px;
+}

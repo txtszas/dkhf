@@ -8,7 +8,18 @@
 	</div>
 	
 	<div id="add-source-section">
-		<button class="btn btn-success" id="add-source-button">添加源</button>
+		<div class="btn-group" id="add-source-button">
+			<a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#" >
+		    	添加源
+		    	<span class="caret"></span>
+		  	</a>
+		  	<ul class="dropdown-menu">
+		  		<li><a href="<?php echo $this->createUrl('Source/add', array('type' => Source::TYPE_RSS)) ?>">添加订阅源</a></li>
+		  		<li><a href="<?php echo $this->createUrl('Source/add', array('type' => Source::TYPE_WEIBO)) ?>">添加微博源</a></li>
+		  		<li><a href="<?php echo $this->createUrl('Source/add', array('type' => Source::TYPE_TIEBA)) ?>">添加贴吧源</a></li>
+		  		<li><a href="<?php echo $this->createUrl('Source/add', array('type' => Source::TYPE_WEIBOTOP)) ?>">添加热门微博源</a></li>
+		  	</ul>
+		</div>
 	</div>
 
 	<div id="scrollable-sections-holder">
@@ -82,10 +93,22 @@ if ($isShowUnread) {
 				  			</li>
 					  	</ul>
 					</div>
-					
-					
+					<div class="btn-group">
+					  	<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+					    	<i class="icon-cog"></i>设置
+					    	<span class="caret"></span>
+					  	</a>
+					  	<ul class="dropdown-menu">
+					  		<li><a href="<?php echo $this->createUrl('Filter/index')?>" >内容过滤设置</a></li>
+					  	</ul>
+					</div>
+				</div>
+				<div class="status">
+					今日抓取：<?php echo Page::todayFetchNum()?>
+					今日已发布：<?php echo Log::todayPublish()?>
 				</div>
 			</div>
+
 		</div>
 
 		<div id="viewer-container">

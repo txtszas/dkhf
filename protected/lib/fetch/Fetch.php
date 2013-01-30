@@ -18,6 +18,12 @@ class Fetch
 			//Yii::endProfile('fetch sources');
 			
 			if ($pageList && count($pageList) > 0 ) {
+				
+				//内容过滤
+				Yii::beginProfile('filter');
+				$this->filterContent($pageList);
+				Yii::endProfile('filter');
+				
 				//图片本地化
 				Yii::beginProfile('img local');
 				$this->imageLocalization($pageList);
@@ -96,9 +102,7 @@ class Fetch
 		$pageList = array();
 		//遍历每个订阅项目
 		foreach ($feed->get_items() as $item) {
-			//获取标题
 			$title = html_entity_decode ( $item->get_title (), null, 'UTF-8' );
-			//检查是否已经存在此标题
 			if (Page::checkTitle($title)){
 				$postdate = strtotime( $item->get_date() );
 				//获取页面内容
@@ -161,9 +165,15 @@ class Fetch
 	
 	
 	function saveToDb($pageList){
+		date_default_timezone_set('Asia/Shanghai');
 		foreach ($pageList as $page){
 			$model = new Page();
 			$model->attributes = $page;
+			
+			//内容过滤
+			//$model->content = Filter::filterRule($model->content, $model->sid);
+			
+			$model->fetch_ts = time();
 			$model->save();
 		}
 	}
@@ -401,6 +411,18 @@ class Fetch
 		}
 		return $doc->html();
 		
+	}
+	
+	
+	/*
+	 *  内容过滤
+	 */
+	
+	function filterContent( &$pageList){
+		foreach ($pageList as $k => $page) {
+			$pageList[$k]['content'] = Filter::filterRule($pageList[$k]['content'], $pageList[$k]['sid']);
+		}
+		return $pageList;
 	}
 	protected function add( $url, &$imgs ){
 		preg_match('#\.[a-zA-Z]*$#', $url, $match);

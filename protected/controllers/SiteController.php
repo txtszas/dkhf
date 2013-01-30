@@ -171,9 +171,11 @@ class SiteController extends Controller
 	}
 	
 	public function actionTest(){
-		echo date('Y-m-d H:i:s',1357320561);
-		// $dkhpage = new Dkh_post();
-		// $dkhpage->post_content = '3123';
-		// $dkhpage->save();
+		$filter = Filter::getFilterBySid(1);
+		$content = 'tsdfaf123123';
+		echo $filter->filterContent($content);
+	}
+	public function actionClear(){
+		Page::clear3day();
 	}
 }

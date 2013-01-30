@@ -3463,3 +3463,2534 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2013/01/23 19:52:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'postadte' in 'where clause'. The SQL statement executed was: SELECT * FROM `page` `t` WHERE postadte < 1358682753.
+in /Users/xutian/workspace/php/dkhf/protected/models/Page.php (145)
+in /Users/xutian/workspace/php/dkhf/protected/controllers/SiteController.php (180)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/23 19:52:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'postadte' in 'where clause'. The SQL statement executed was: SELECT * FROM `page` `t` WHERE postadte < 1358682753' in /Users/xutian/workspace/php/dkhf/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /Users/xutian/workspace/php/dkhf/framework/db/ar/CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 /Users/xutian/workspace/php/dkhf/framework/db/ar/CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /Users/xutian/workspace/php/dkhf/protected/models/Page.php(145): CActiveRecord->findAll('postadte < 1358...')
+#4 /Users/xutian/workspace/php/dkhf/protected/controllers/SiteController.php(180): Page::clear3day()
+#5 /Users/xutian/workspace/php/dkhf/framework/web/actions/CInlineAction.php(50): SiteController->actionClear()
+#6 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#8 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): CController->run('clear')
+#10 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('site/clear')
+#11 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#13 {main}
+REQUEST_URI=/site/clear
+---
+2013/01/23 19:52:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 19:53:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 19:53:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 19:53:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 19:53:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 19:58:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:27:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:27:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:33:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:34:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:34:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:34:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:40:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:40:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:40:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:44:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:44:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:44:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:51:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:51:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 21:51:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 22:03:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 22:03:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 22:03:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 22:03:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 22:03:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 22:06:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 22:06:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/23 22:06:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 18:57:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 18:58:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 18:58:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 18:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:01:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:02:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:03:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:03:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:07:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:07:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:08:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:13:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:13:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:13:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:14:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:19:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:21:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ueditor" 动作.' in /Users/xutian/workspace/php/dkhf/framework/web/CController.php:484
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(271): CController->missingAction('ueditor')
+#1 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): CController->run('ueditor')
+#2 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('site/ueditor/ed...')
+#3 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/ueditor/editor_config.js
+HTTP_REFERER=http://dkhf.dev.com/site/
+---
+2013/01/24 19:21:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ueditor" 动作.' in /Users/xutian/workspace/php/dkhf/framework/web/CController.php:484
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(271): CController->missingAction('ueditor')
+#1 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): CController->run('ueditor')
+#2 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('site/ueditor/ed...')
+#3 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/ueditor/editor_all.js
+HTTP_REFERER=http://dkhf.dev.com/site/
+---
+2013/01/24 19:21:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:21:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ueditor" 动作.' in /Users/xutian/workspace/php/dkhf/framework/web/CController.php:484
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(271): CController->missingAction('ueditor')
+#1 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): CController->run('ueditor')
+#2 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('site/ueditor/ed...')
+#3 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/ueditor/editor_config.js
+HTTP_REFERER=http://dkhf.dev.com/site/
+---
+2013/01/24 19:21:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ueditor" 动作.' in /Users/xutian/workspace/php/dkhf/framework/web/CController.php:484
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(271): CController->missingAction('ueditor')
+#1 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): CController->run('ueditor')
+#2 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('site/ueditor/ed...')
+#3 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/ueditor/editor_all.js
+HTTP_REFERER=http://dkhf.dev.com/site/
+---
+2013/01/24 19:21:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:21:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:21:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ueditor" 动作.' in /Users/xutian/workspace/php/dkhf/framework/web/CController.php:484
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(271): CController->missingAction('ueditor')
+#1 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): CController->run('ueditor')
+#2 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('site/ueditor/ed...')
+#3 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/ueditor/editor_all.js
+HTTP_REFERER=http://dkhf.dev.com/site/
+---
+2013/01/24 19:21:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:22:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:22:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:22:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:22:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:22:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:22:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:22:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:22:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:22:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:22:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:22:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:26:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:27:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:27:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:28:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:28:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:34:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:34:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:35:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:35:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:40:20 [error] [php] include(CAtiveForm.php): failed to open stream: No such file or directory (/Users/xutian/workspace/php/dkhf/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWidgetFactory.php(147): import()
+#1 /Users/xutian/workspace/php/dkhf/framework/web/CBaseController.php(147): CWidgetFactory->createWidget()
+#2 /Users/xutian/workspace/php/dkhf/framework/web/CBaseController.php(190): SourceController->createWidget()
+#3 /Users/xutian/workspace/php/dkhf/protected/views/source/rss_form.php(3): SourceController->beginWidget()
+#4 /Users/xutian/workspace/php/dkhf/framework/web/CBaseController.php(127): require()
+#5 /Users/xutian/workspace/php/dkhf/framework/web/CBaseController.php(96): SourceController->renderInternal()
+#6 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(870): SourceController->renderFile()
+#7 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(783): SourceController->renderPartial()
+#8 /Users/xutian/workspace/php/dkhf/protected/controllers/SourceController.php(9): SourceController->render()
+#9 unknown(0): SourceController->actionAdd()
+#10 /Users/xutian/workspace/php/dkhf/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#11 /Users/xutian/workspace/php/dkhf/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#12 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(309): CInlineAction->runWithParams()
+#13 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(287): SourceController->runAction()
+#14 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(266): SourceController->runActionWithFilters()
+#15 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): SourceController->run()
+#16 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /Users/xutian/workspace/php/dkhf/index.php(18): CWebApplication->run()
+REQUEST_URI=/Source/add?type=1
+in /Users/xutian/workspace/php/dkhf/protected/views/source/rss_form.php (3)
+in /Users/xutian/workspace/php/dkhf/protected/controllers/SourceController.php (9)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/24 19:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:40:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:43:32 [error] [php] Undefined variable: model (/Users/xutian/workspace/php/dkhf/protected/views/source/rss_form.php:6)
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(870): SourceController->renderFile()
+#1 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(783): SourceController->renderPartial()
+#2 /Users/xutian/workspace/php/dkhf/protected/controllers/SourceController.php(9): SourceController->render()
+#3 unknown(0): SourceController->actionAdd()
+#4 /Users/xutian/workspace/php/dkhf/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /Users/xutian/workspace/php/dkhf/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(287): SourceController->runAction()
+#8 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(266): SourceController->runActionWithFilters()
+#9 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): SourceController->run()
+#10 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Users/xutian/workspace/php/dkhf/index.php(18): CWebApplication->run()
+REQUEST_URI=/Source/add?type=1
+in /Users/xutian/workspace/php/dkhf/protected/views/source/rss_form.php (6)
+in /Users/xutian/workspace/php/dkhf/protected/controllers/SourceController.php (9)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/24 19:43:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:44:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:46:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:46:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:46:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 19:48:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 20:19:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 20:21:29 [error] [php] Object of class Source could not be converted to string (/Users/xutian/workspace/php/dkhf/framework/web/helpers/CHtml.php:1825)
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/helpers/CHtml.php(727): inputField()
+#1 /Users/xutian/workspace/php/dkhf/protected/views/source/rss_form.php(21): checkBox()
+#2 /Users/xutian/workspace/php/dkhf/framework/web/CBaseController.php(127): require()
+#3 /Users/xutian/workspace/php/dkhf/framework/web/CBaseController.php(96): SourceController->renderInternal()
+#4 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(870): SourceController->renderFile()
+#5 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(783): SourceController->renderPartial()
+#6 /Users/xutian/workspace/php/dkhf/protected/controllers/SourceController.php(9): SourceController->render()
+#7 unknown(0): SourceController->actionAdd()
+#8 /Users/xutian/workspace/php/dkhf/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#9 /Users/xutian/workspace/php/dkhf/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(287): SourceController->runAction()
+#12 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(266): SourceController->runActionWithFilters()
+#13 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): SourceController->run()
+#14 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#15 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/xutian/workspace/php/dkhf/index.php(18): CWebApplication->run()
+REQUEST_URI=/Source/add?type=1
+in /Users/xutian/workspace/php/dkhf/protected/views/source/rss_form.php (21)
+in /Users/xutian/workspace/php/dkhf/protected/controllers/SourceController.php (9)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/24 20:21:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 20:22:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 20:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 20:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 20:31:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 20:31:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 20:33:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 20:34:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 20:49:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 20:49:58 [error] [php] Undefined index: type (/Users/xutian/workspace/php/dkhf/protected/controllers/SourceController.php:11)
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(287): SourceController->runAction()
+#3 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(266): SourceController->runActionWithFilters()
+#4 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): SourceController->run()
+#5 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Users/xutian/workspace/php/dkhf/index.php(18): CWebApplication->run()
+REQUEST_URI=/Source/add?type=1
+in /Users/xutian/workspace/php/dkhf/protected/controllers/SourceController.php (11)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/24 20:49:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 20:50:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 20:50:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 20:50:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:02:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:02:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:08:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:09:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:13:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:13:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:13:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:13:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:22:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:26:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:26:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:28:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:28:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:28:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:29:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:29:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:29:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:29:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:31:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:32:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:42:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:42:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:42:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:42:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:46:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:47:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:50:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/24 21:50:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:13:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:13:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:13:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:14:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:14:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:21:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:21:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:22:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:22:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:22:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:23:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:31:46 [error] [exception.CException] exception 'CException' with message 'Filter and its behaviors do not have a method or closure named "rule".' in /Users/xutian/workspace/php/dkhf/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/db/ar/CActiveRecord.php(226): CComponent->__call('rule', Array)
+#1 /Users/xutian/workspace/php/dkhf/protected/controllers/SiteController.php(175): CActiveRecord->__call('rule', Array)
+#2 /Users/xutian/workspace/php/dkhf/protected/controllers/SiteController.php(175): Filter->rule()
+#3 /Users/xutian/workspace/php/dkhf/framework/web/actions/CInlineAction.php(50): SiteController->actionTest()
+#4 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): CController->run('test')
+#8 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('site/test')
+#9 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/site/test
+---
+2013/01/25 20:31:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:32:00 [error] [exception.CException] exception 'CException' with message 'Filter and its behaviors do not have a method or closure named "rule".' in /Users/xutian/workspace/php/dkhf/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/db/ar/CActiveRecord.php(226): CComponent->__call('rule', Array)
+#1 /Users/xutian/workspace/php/dkhf/protected/controllers/SiteController.php(175): CActiveRecord->__call('rule', Array)
+#2 /Users/xutian/workspace/php/dkhf/protected/controllers/SiteController.php(175): Filter->rule()
+#3 /Users/xutian/workspace/php/dkhf/framework/web/actions/CInlineAction.php(50): SiteController->actionTest()
+#4 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): CController->run('test')
+#8 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('site/test')
+#9 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/site/test
+---
+2013/01/25 20:32:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:32:29 [error] [exception.CException] exception 'CException' with message 'Filter and its behaviors do not have a method or closure named "rule".' in /Users/xutian/workspace/php/dkhf/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/db/ar/CActiveRecord.php(226): CComponent->__call('rule', Array)
+#1 /Users/xutian/workspace/php/dkhf/protected/controllers/SiteController.php(176): CActiveRecord->__call('rule', Array)
+#2 /Users/xutian/workspace/php/dkhf/protected/controllers/SiteController.php(176): Filter->rule()
+#3 /Users/xutian/workspace/php/dkhf/framework/web/actions/CInlineAction.php(50): SiteController->actionTest()
+#4 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): CController->run('test')
+#8 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('site/test')
+#9 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/site/test
+---
+2013/01/25 20:32:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:32:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:32:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:32:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:32:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:32:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:33:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:33:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:35:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:35:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:35:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:47:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:47:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:47:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:47:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:47:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:48:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:48:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 20:55:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:08:57 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sid' in 'where clause'. The SQL statement executed was: SELECT * FROM `source` `t` WHERE sid = 24 LIMIT 1.
+in /Users/xutian/workspace/php/dkhf/protected/controllers/ApiController.php (174)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/25 21:08:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sid' in 'where clause'. The SQL statement executed was: SELECT * FROM `source` `t` WHERE sid = 24 LIMIT 1' in /Users/xutian/workspace/php/dkhf/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/db/CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /Users/xutian/workspace/php/dkhf/framework/db/ar/CActiveRecord.php(1291): CDbCommand->queryRow()
+#2 /Users/xutian/workspace/php/dkhf/framework/db/ar/CActiveRecord.php(1396): CActiveRecord->query(Object(CDbCriteria))
+#3 /Users/xutian/workspace/php/dkhf/protected/controllers/ApiController.php(174): CActiveRecord->find('sid = 24')
+#4 /Users/xutian/workspace/php/dkhf/framework/web/actions/CInlineAction.php(50): ApiController->actionTest()
+#5 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): CController->run('test')
+#9 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('api/test')
+#10 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/api/test
+---
+2013/01/25 21:08:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:09:09 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "getPageList".' in /Users/xutian/workspace/php/dkhf/framework/base/CComponent.php:266
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/protected/controllers/ApiController.php(176): CComponent->__call('getPageList', Array)
+#1 /Users/xutian/workspace/php/dkhf/protected/controllers/ApiController.php(176): ApiController->getPageList(Object(Source))
+#2 /Users/xutian/workspace/php/dkhf/framework/web/actions/CInlineAction.php(50): ApiController->actionTest()
+#3 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): CController->run('test')
+#7 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('api/test')
+#8 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/api/test
+---
+2013/01/25 21:09:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:09:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:12:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:17:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:17:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:17:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:18:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:18:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:18:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:19:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:19:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:19:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:20:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:22:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:27:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:27:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:36:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:36:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:54:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:54:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:54:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:54:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:55:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:55:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:55:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:59:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:59:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 21:59:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:11:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:11:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:11:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:11:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:11:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:13:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:14:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:14:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:16:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:20:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:20:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:20:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:20:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:29:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:29:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:32:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:33:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:33:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:33:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:42:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:44:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:44:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:44:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:44:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:44:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:47:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:47:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:52:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:53:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:53:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:57:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:57:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:57:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:59:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:59:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 22:59:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:08:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:08:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:09:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:09:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:09:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:17:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:17:39 [warning] [application] Failed to set unsafe attribute "replace" of "Filter".
+in /Users/xutian/workspace/php/dkhf/protected/controllers/FilterController.php (14)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/25 23:17:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:18:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:18:24 [warning] [application] Failed to set unsafe attribute "replace" of "Filter".
+in /Users/xutian/workspace/php/dkhf/protected/controllers/FilterController.php (14)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/25 23:18:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:19:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:19:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:19:44 [warning] [application] Failed to set unsafe attribute "replace" of "Filter".
+in /Users/xutian/workspace/php/dkhf/protected/controllers/FilterController.php (14)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/25 23:19:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:20:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:20:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:20:32 [warning] [application] Failed to set unsafe attribute "replace" of "Filter".
+in /Users/xutian/workspace/php/dkhf/protected/controllers/FilterController.php (14)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/25 23:20:32 [error] [php] Undefined index: replace (/Users/xutian/workspace/php/dkhf/protected/controllers/FilterController.php:15)
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(287): FilterController->runAction()
+#1 /Users/xutian/workspace/php/dkhf/framework/web/CController.php(266): FilterController->runActionWithFilters()
+#2 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(283): FilterController->run()
+#3 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/xutian/workspace/php/dkhf/index.php(18): CWebApplication->run()
+REQUEST_URI=/Filter/Add
+in /Users/xutian/workspace/php/dkhf/protected/controllers/FilterController.php (15)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/25 23:20:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:20:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:20:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:20:50 [warning] [application] Failed to set unsafe attribute "replace" of "Filter".
+in /Users/xutian/workspace/php/dkhf/protected/controllers/FilterController.php (14)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/25 23:20:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:21:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:21:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:21:51 [warning] [application] Failed to set unsafe attribute "replace" of "Filter".
+in /Users/xutian/workspace/php/dkhf/protected/controllers/FilterController.php (14)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/25 23:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:24:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:24:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:24:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:24:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:24:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:25:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:28:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:28:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:28:20 [warning] [application] Failed to set unsafe attribute "replace" of "Filter".
+in /Users/xutian/workspace/php/dkhf/protected/controllers/FilterController.php (28)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/25 23:28:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:28:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:28:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:28:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:28:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:28:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:28:48 [warning] [application] Failed to set unsafe attribute "replace" of "Filter".
+in /Users/xutian/workspace/php/dkhf/protected/controllers/FilterController.php (28)
+in /Users/xutian/workspace/php/dkhf/index.php (18)
+2013/01/25 23:28:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:28:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:28:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:29:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:31:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:31:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:32:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:32:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:32:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:34:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:35:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:35:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/25 23:38:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/01/28 17:41:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/xutian/workspace/php/dkhf/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/xutian/workspace/php/dkhf/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/xutian/workspace/php/dkhf/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

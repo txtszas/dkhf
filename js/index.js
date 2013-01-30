@@ -131,7 +131,7 @@
 		}
 		, addPage: function(result){
 			var editDom
-			this.page = $.par(result)
+			this.page = $.parseJSON(result)
 			this.entry.append('<div class="entry-action"><a href="javascript:;" class="edit-page"><i class="icon-edit"></i>编辑</a></div>\
 						<div class="entry-container">\
 							<div class="entry-main">\
@@ -172,6 +172,8 @@
 						</select>\
 						<span>发布者:</span>\
 						'+$('.author-list-select').html() + '\
+						<span>顶：</span><input type="text" name="ding" value="0" class="ding">\
+						<span>踩：</span><input type="text" name="cai" value="0" class="ding">\
 						<div class="form-actions">\
 						  <button type="submit" class="btn btn-primary">发布</button>\
 						  <button type="button" class="btn">取消</button>\

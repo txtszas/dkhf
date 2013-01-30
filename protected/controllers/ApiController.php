@@ -66,18 +66,18 @@ class ApiController extends Controller
 	function getPages($sid){
 		$unRead = Config::model()->findByPk('unread');
 		if ($unRead->value == 1) {
-			return $pages = Page::model()->findAll('sid = :sid AND is_read = 0 AND is_publish = 0 ORDER BY postdate desc LIMIT 30', array('sid' => $sid));
+			return $pages = Page::model()->findAll('sid = :sid AND is_read = 0 AND is_publish = 0 ORDER BY postdate desc LIMIT 100', array('sid' => $sid));
 		}else{
-			return $pages = Page::model()->findAll('sid = :sid  ORDER BY postdate desc LIMIT 30', array('sid' => $sid));
+			return $pages = Page::model()->findAll('sid = :sid  ORDER BY postdate desc LIMIT 100', array('sid' => $sid));
 		}
 	}
 	
 	function getAllPages(){
 		$unRead = Config::model()->findByPk('unread');
 		if ($unRead->value == 1) {
-			return $pages = Page::model()->findAll('is_read = 0 AND is_publish = 0 ORDER BY postdate desc LIMIT 50');
+			return $pages = Page::model()->findAll('is_read = 0 AND is_publish = 0 ORDER BY postdate desc LIMIT 500');
 		}else{
-			return $pages = Page::model()->findAll('is_publish = 0 ORDER BY postdate desc LIMIT 50');
+			return $pages = Page::model()->findAll('is_publish = 0 ORDER BY postdate desc LIMIT 500');
 		}
 	}
 	
@@ -93,12 +93,15 @@ class ApiController extends Controller
 		$content = stripslashes($_POST['content']);
 		$term_id = $_POST['term_id'];
 		$author_id = $_POST['author_id'];
+		$dingNum = $_POST['ding'];
+		$caiNum = $_POST['cai'];
 		$page = $this->updatePage($pageId, $title, $content);
 
 		if ($page != false) {
 			$postId = $this->publishPage($page, $term_id, $author_id);
 			if ($postId > 0){
-				$result = array('status' => 'success','pid' => $postId);				
+				$result = array('status' => 'success','pid' => $postId);
+				Dkh_wti_like_post::addPostDing($dingNum, $caiNum, $postId);
 				echo json_encode($result);
 				return true;
 			}else{
@@ -106,6 +109,8 @@ class ApiController extends Controller
 				return false;
 			}
 		}
+		
+		
 	}
 	
 	
@@ -150,6 +155,14 @@ class ApiController extends Controller
 			$page->is_publish = 1;
 			$page->save();
 			
+			//记录日志
+			
+			$log = new Log();
+			$log->action = 'publish';
+			$log->do_ts = time();
+			$log->about_id = $post->ID;
+			$log->save();
+			
 			return $post->ID;
 		}else{
 			return false;
@@ -158,10 +171,13 @@ class ApiController extends Controller
 	}
 	
 	function actionTest(){
-		$content = '<img src="http://dkhf.dev.com//attachment/Mon_1212/2d4c2903eacda28835e7b73834dc0c96.jpg" />';
-		$post_id = 854;
-		echo time();
-		echo date('Y-m-d H:i:s',time());
+		$url = 'http://dapenti.org/blog/rssfortugua.asp';
+		$feed = new SimplePie();
+		$feed->set_feed_url($url);
+		$feed->set_cache_location(Yii::app()->basePath.'/rss_cache');
+		$feed->strip_htmltags(false);
+		$feed->init();
+		echo count($feed->get_items());
 	}
 	
 

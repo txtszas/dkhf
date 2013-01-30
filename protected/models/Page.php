@@ -139,4 +139,19 @@ class Page extends CActiveRecord
 		$this->is_read = 1;
 		$this->save();
 	}
+	
+	static public function clear3day(){
+		$time = time() - 3 * 3600 * 24; 
+		$pages = self::model()->findAll('postdate < '.$time);
+		echo count($pages);
+		foreach ($pages as $page){
+			$page->delete();
+		}
+	}
+	
+	static public function todayFetchNum(){
+		date_default_timezone_set('Asia/Shanghai');
+		$today_ts = strtotime(date('Y-m-d',time()));
+		return self::model()->count('fetch_ts > '.$today_ts);
+	}
 }

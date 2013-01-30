@@ -30,7 +30,6 @@ class Downloader {
                         
                         }
                         $path = trim(urldecode($path));
-                        //var_dump($path);die;
                         $fp = fopen($path, 'w+');
                         $fileHandles[] = $fp;
                         $curlHandles[] = $curlHandle = curl_init( $url );
