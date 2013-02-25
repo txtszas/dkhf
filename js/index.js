@@ -20,6 +20,16 @@
 		
 		, listen:function(){
 			this.entryTitleDom
+				.unbind()
+			this.checkbox
+				.unbind()
+			this.markChosenReaded
+				.unbind()
+			this.quickPost
+				.unbind()
+				
+				
+			this.entryTitleDom
 				.on('click',	$.proxy(this.click, this))
 			this.checkbox
 				.on('change',	$.proxy(this.check, this))
@@ -40,6 +50,8 @@
 				this.closeAll()
 				//点击到未展开
 				this.expand()
+				
+				
 			}
 		}
 		, check: function(e){
@@ -114,7 +126,13 @@
 				})
 				
 			}
+			this.sweetTo(this.id)
 			
+		}
+		, sweetTo:function(id){
+			var scrollTop = $('#viewer-entries-container').scrollTop()
+			var top = $('#page-'+id).offset().top
+			$('#viewer-entries-container').scrollTop(top - 85 + scrollTop)
 		}
 
 
@@ -132,18 +150,31 @@
 		, addPage: function(result){
 			var editDom
 			this.page = $.parseJSON(result)
+			var commentDom
+			commentDom = '<ul>'
+				
+			for ( var key in this.page.comments){
+				var comment = this.page.comments[key]
+				commentDom += '<li><b>'+comment.author+':</b><span class="commit-content">'+comment.content+'</span></li>'
+			}
+			commentDom +='</ul>'
 			this.entry.append('<div class="entry-action"><a href="javascript:;" class="edit-page"><i class="icon-edit"></i>编辑</a></div>\
 						<div class="entry-container">\
 							<div class="entry-main">\
 								<h2 class="entry-title"><a class="entry-title-link" target="_blank" href="'+this.page.link+'">'+this.page.title+'<div class="entry-title-go-to"></div></a></h2>\
 								<div class="entry-body">'+ this.page.content +'</div>\
 							</div>\
-						</div>');
+							<div class="entry-commit">\
+							'+ commentDom  +'\
+							</div>\
+						</div>\
+						<div class="entry-action"><a href="javascript:;" class="edit-page"><i class="icon-edit"></i>编辑</a></div>')
 			//编辑监听
+			//console.log(this.page)
 			editDom = this.entry.find('.edit-page')
 			editDom.on('click', $.proxy(this.edit, this))
-
 			//editDom.on('edit', $.proxy(this.click, this))
+			
 		}
 
 		, edit:  function (e){
@@ -154,7 +185,16 @@
 			entryContainerDom.empty()
 			this.entry.find('.entry-action').html('<a href="javascript:;" class="edit-close"><i class="icon-remove"></i>关闭</a>')
 			this.entry.find('.entry-action .edit-close').on('click', $.proxy(this.close, this))
-
+			
+			var commentDom
+			commentDom = '<ul>'
+				
+			for ( var key in this.page.comments){
+				var comment = this.page.comments[key]
+				commentDom += '<li id="comment-'+comment.id+'"><b>'+comment.author+':</b><span class="commit-content" data-id="'+comment.id+'">'+comment.content+'</span><a href="javascript:;" class="remove-comment" data-id="'+comment.id+'"><i class="icon-remove"></i>删除</a></li>'
+			}
+			commentDom +='</ul>'
+				
 			entryContainerDom.append('<form action="/api/QuickPublishPage" method="post" class="form-page">\
 							<input type="hidden" name ="pageid" value="'+ this.page.id +'"/>\
 						<div>\
@@ -174,14 +214,36 @@
 						'+$('.author-list-select').html() + '\
 						<span>顶：</span><input type="text" name="ding" value="0" class="ding">\
 						<span>踩：</span><input type="text" name="cai" value="0" class="ding">\
+						'+commentDom+'\
 						<div class="form-actions">\
 						  <button type="submit" class="btn btn-primary">发布</button>\
 						  <button type="button" class="btn">取消</button>\
 						</div>\
 					</form>'
 				)
+				this.editor.options.initialFrameWidth = $(window).width() - 350
 				this.editor.render("myEditor");
 				this.editor.setContent(this.page.content);
+
+
+				//评论可编辑
+				$('.commit-content').editable('api/EditComment',{
+					 indicator : '保存中',
+					 name 	: 'comment-content',
+					 onblur	: 'submit',
+					 style  : 'display: inline',
+					 submitdata:function( value ){
+						 return {comment_id:$(this).attr('data-id')}
+					 }
+				})
+				//评论可删除
+				$('.remove-comment').click(function(){
+					var comment_id = $(this).attr('data-id')
+					console.log(comment_id)
+					$.get('/Api/DelComment?id='+comment_id, function(result){
+						  $('#comment-'+comment_id).slideUp()
+					});
+				})
 				//this.editor.setHeight(400);
 			//表单ajax提交
 			$('.form-page').ajaxForm(function(data){
@@ -194,6 +256,7 @@
 				}
 				
 			});
+			this.sweetTo(this.id)
 
 		}
 		, message: function(message){
@@ -220,16 +283,35 @@
 !function($){
 	$(window).hashchange( function(){
 		hash = location.hash
+		$('#getMore').remove();//去除加载更多
+		var pageNum = 0
 		if (location.pathname == '/' && (location.hash == '' || location.hash == '#all-source' ) && location.search == '' ) {
 			sid = 'all'
 			$.get('/Api/pages?sid=all', function(result){
 				  renderView(result,sid);
 			});
+			
+			//加载更多实现代码
+			$('#entries').after('<button class="btn btn-block" id="getMore">加载更多</button>')
+			$('#getMore').click(function(){
+				pageNum ++
+				var button = $('#getMore')
+				button.addClass('disabled')
+				button.text('加载中....')
+				$.get('/Api/pages?sid=' + sid + '&pageNum='+pageNum, function(result){
+					renderMoreView(result,sid)
+					button.text('加载更多')
+					button.removeClass('disabled')
+				})
+				
+			})
+			
 
 			if (!$('.item').hasClass('selected')){
 				$('#source-list li').removeClass('current')
 				$('.item').addClass('selected')
 			}
+			
 		}else{
 			sid = hash.match(/\d+/g)
 			$('.item').removeClass('selected')
@@ -242,12 +324,42 @@
 	})
 	$(window).hashchange();
 	
+	//窗口调整
+	
+	$(window).resize(function(){
+		resizeHeight()
+	})
+	
+	function resizeHeight(){
+		var leftSideHeight = $(window).height() - 96
+		var contentHeight = $(window).height() - 96
+		$('#scrollable-sections-holder').css('height',leftSideHeight)
+		$('#viewer-entries-container').css('height',contentHeight)
+	}
+	
+	resizeHeight()
+	
+	
+	
 	function renderView(result, sid){
 		 data = $.parseJSON(result)
 		 pages = data.pages
 		 sourceName = data.sourceName;
 		 $('#chrome-title').html(sourceName)
 		 $('#entries').html('');
+		 for(var key in pages) { 
+			 dom = getEntrydom(pages[key], key, sid);
+			 $('#entries').append(dom)
+		 }
+		 
+		 
+		 $('1').viewdail(sid)
+	}
+	
+	
+	function renderMoreView(result,sid){
+		 data = $.parseJSON(result)
+		 pages = data.pages
 		 for(var key in pages) { 
 			 dom = getEntrydom(pages[key], key, sid);
 			 $('#entries').append(dom)

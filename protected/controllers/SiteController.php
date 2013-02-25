@@ -81,6 +81,11 @@ class SiteController extends Controller
 		$fetch = new Fetch();
 		$fetch->fetchTop();
 	}
+	
+	public function actionFetchOne($sid){
+		$fetch = new Fetch();
+		var_dump($fetch->fetchOne($sid));	
+	}
 
 	/**
 	 * This is the action to handle external exceptions.
@@ -142,7 +147,7 @@ class SiteController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->user->returnUrl);
+				$this->redirect('/');
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));
@@ -171,11 +176,21 @@ class SiteController extends Controller
 	}
 	
 	public function actionTest(){
-		$filter = Filter::getFilterBySid(1);
-		$content = 'tsdfaf123123';
-		echo $filter->filterContent($content);
+		$url = 'http://jandan.net/2013/02/20/quidditch-snitch.html';
+		$fetch = new Fetch();
+		$page = $fetch->fetchByUrl($url);
+		var_dump($page);
+		
 	}
 	public function actionClear(){
 		Page::clear3day();
+	}
+	public function actionClearComment(){
+		$time = time() - 2 * 3600 * 24;
+		$comments = Comment::model()->findAll('create_ts <' .$time);
+		echo count($comments);
+		foreach ($comments as $comment){
+			$comment->delete();
+		} 
 	}
 }

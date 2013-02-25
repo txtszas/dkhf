@@ -23,6 +23,7 @@ return array(
 		'application.lib.simplepie.*',
 		'application.lib.fetch.*',
 		'application.lib.weibo.*',
+		'application.lib.comment.*',
 		'application.lib.*'
 	),
 
@@ -104,8 +105,8 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 		'weibo_config'	=> array(
-				'akey' => '2927777458',
-				'skey' => '7ae2b5a505872a21939633f433d624d8',
+				'akey' => '1057666462',
+				'skey' => '93ec118a187c5194440508da11b220f4',
 				'callback_url' => 'http://dkhf.dev.com/site/callback'
 		),
 		'imgPrefix' => 'http://dkhf.dev.com/'

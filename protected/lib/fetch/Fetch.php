@@ -5,6 +5,72 @@
 class Fetch
 {
 	public $tiebaMaxPageNum = 2;
+	
+	
+	
+	
+	function fetchByUrl($url){
+		$source = $this->getSourceByUrl($url);
+		if ($source !== false){
+			$page = $this->getContentByType($source, $url);
+			return $page;
+		}else{
+			return false;
+		}
+	}
+	
+	
+	function getSourceByUrl($url){
+		$sources = $this->getAllSource();
+		//逐个匹配siteurl
+		foreach ($sources as $source){
+			$searchResult = strstr($url, $source->siteurl);
+			if ($searchResult !== false){
+				return $source;//匹配成功，返回源对象
+			}
+		}
+		return false;//匹配失败
+	}
+	
+	function getContentByType($source, $url){
+		switch ( $source->type ){
+			case Source::TYPE_RSS :
+				return $this->getOnePage($url, $source);
+				break;
+			case Source::TYPE_WEIBO :
+				
+			case Source::TYPE_TIEBA:
+				
+			case Source::TYPE_WEIBOTOP:
+				
+		}
+	}
+	
+	function getOnePage($url, $source){
+		$snoopy = new Snoopy();
+		Yii::beginProfile('fetch page');
+		$snoopy->fetch($url);
+		$content = $snoopy->results;
+		Yii::endProfile('fetch page');
+		if ($source->encode != ''){
+			$content = preg_replace('/<meta .*?charset.*?>/', '', $content);
+			$content =  mb_convert_encoding( $content, 'UTF-8', $source->encode );
+		}
+		$searchResult = strstr($content, '<html>');
+		if ($searchResult == false){
+			$content = '<html>' . $content; 
+		}
+		$doc = phpQuery::newDocumentHTML($content);
+		$content = $doc->find($source->content_selector)->html();
+		
+		$content = Filter::filterRule($content, $source->id);
+		
+		$content = $this->saveImage($content);
+		$title = $doc->find('title')->text();
+		return array(
+				'title' => $title,
+				'content' => $content);
+	}
 	/*
 	 * 抓取所有来源
 	 */
@@ -12,6 +78,7 @@ class Fetch
 	{
 		set_time_limit(0);
 		$sources = $this->getAllSource();
+		echo count($sources);
 		foreach ($sources as $s){
 			//Yii::beginProfile('fetch sources');
 			$pageList = $this->getPageList( $s );
@@ -30,7 +97,7 @@ class Fetch
 				Yii::endProfile('img local');
 				
 				Yii::beginProfile('save to db');
-				$this->saveToDb($pageList);
+				$this->saveToDb($pageList, $s);
 				$s->lastpost_ts = time();
 				$s->save();
 				Yii::endProfile('save to db');
@@ -38,6 +105,38 @@ class Fetch
 			
 		}
 		return true;
+	}
+	
+	function fetchOne($sid){
+		set_time_limit(0);
+		$sources = Source::model()->findByPk($sid);
+		$s = $sources;
+		if (isset($s)){
+			$pageList = $this->getPageList( $s );
+			if ($pageList && count($pageList) > 0 ) {
+			
+				//内容过滤
+				Yii::beginProfile('filter');
+				$this->filterContent($pageList);
+				Yii::endProfile('filter');
+			
+				//图片本地化
+				Yii::beginProfile('img local');
+				$this->imageLocalization($pageList);
+				Yii::endProfile('img local');
+			
+				Yii::beginProfile('save to db');
+				$this->saveToDb($pageList, $s);
+				$s->lastpost_ts = time();
+				$s->save();
+				Yii::endProfile('save to db');
+			}
+			return TRUE;
+		}else{
+			return false;
+		}
+		
+		
 	}
 
 	function fetchTop(){
@@ -70,7 +169,7 @@ class Fetch
 	 */
 	
 	function getAllSource(){
-		return Source::model()->findAll();
+		return Source::model()->findAll('is_open = 1');
 	}
 
 	function getTopSource(){
@@ -149,10 +248,11 @@ class Fetch
 	}
 	
 	function parsePage($html, $source){
-		$this->writerFile($html);
-		$doc = phpQuery::newDocumentHTML($html);
+		//$this->writerFile($html);
+
+		$doc = phpQuery::newDocumentHTML($html,'utf8');
 		$content = $doc->find($source->content_selector)->html();
-		$this->writerFile($content);
+		//$this->writerFile($content);
 		return $content;
 	}
 	
@@ -164,7 +264,7 @@ class Fetch
 	
 	
 	
-	function saveToDb($pageList){
+	function saveToDb($pageList, $source){
 		date_default_timezone_set('Asia/Shanghai');
 		foreach ($pageList as $page){
 			$model = new Page();
@@ -174,7 +274,14 @@ class Fetch
 			//$model->content = Filter::filterRule($model->content, $model->sid);
 			
 			$model->fetch_ts = time();
-			$model->save();
+			if ($model->save()) 
+			{
+				//抓取评论
+				$commentFetch = Factory_Comment_Fetch::getFetchByShortName($source->short_name);
+				if ($commentFetch != false){
+					$commentFetch->fetch($model->link, $model->id);
+				}
+			}
 		}
 	}
 	
@@ -206,6 +313,9 @@ class Fetch
 	
 	function getWeiboPageList($weiboDate, $source) {
 		$pageList = array();
+		//$weiboO = new SaeTOAuthV2(Yii::app()->params['weibo_config']['akey'], Yii::app()->params['weibo_config']['skey']);
+		//$weiboC = new SaeTClientV2( Yii::app()->params['weibo_config']['akey'], Yii::app()->params['weibo_config']['skey'] , $token );
+		
 		foreach ($weiboDate as $weibo){
 			if (isset($weibo['text'])) {
 
@@ -218,12 +328,14 @@ class Fetch
 					$content .= '<p><img src="' . $weibo['bmiddle_pic'] . '"></p>';
 		
 				}
+				//$mid = $weiboC->querymid($weibo['id'],1);
 				$pageList [] = array (
 						'title' => $title,
 						'sid' => $source->id,
-						'link' => '1',
+						//'link' => 'http://weibo.com/'.$weibo['user']['id'] .'/' . $mid['mid'],
+						'link'	=> $weibo['id'],
 						'postdate' => $postDate ? $postDate : time(),
-						'content' => $content
+						'content' => $content,
 				);
 			}
 		}
@@ -234,7 +346,7 @@ class Fetch
 	function getWeiboDate($token, $name){
 		$weiboO = new SaeTOAuthV2(Yii::app()->params['weibo_config']['akey'], Yii::app()->params['weibo_config']['skey']);
 		$weiboC = new SaeTClientV2( Yii::app()->params['weibo_config']['akey'], Yii::app()->params['weibo_config']['skey'] , $token );
-		$weibos = $weiboC->user_timeline_by_name($name,1,20,0,0,1,0);
+		$weibos = $weiboC->user_timeline_by_name($name,1,10,0,0,1,0);
 		if (isset($weibos['statuses'])) {
 			return $weibos['statuses'];
 		}else{

@@ -1,12 +1,20 @@
-<script type="text/javascript" src="ueditor/editor_config.js"></script>
+<script type="text/javascript" src="ueditor/editor_config.js?001"></script>
 <script type="text/javascript" src="ueditor/editor_all.js"></script>
+<div class="quick-add">
+	<div class="navbar" style="margin-bottom: 0">
+       	<div class="navbar-inner">
+       		<a class="brand" href="#">管理平台</a>
+            <form class="navbar-form pull-left" action="<?php echo $this->createUrl('Quick/Fetch')?>" method="post">
+               <input type="text" class="span4" name="url">
+               <button type="submit" class="btn">快速发布</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
 <div class="message-area-container" id="loading-area-container">
 </div>
-<div id="nav">
-	<div id="logo-section">
-		<a href="#">管理平台</a>
-	</div>
-	
+<div id="nav">	
 	<div id="add-source-section">
 		<div class="btn-group" id="add-source-button">
 			<a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#" >
@@ -112,7 +120,7 @@ if ($isShowUnread) {
 		</div>
 
 		<div id="viewer-container">
-			<div id="viewer-entries-container" style="height:503px;">
+			<div id="viewer-entries-container">
 				<div id="title-and-status-holder">
 					<span id="chrome-title">所有源</span>
 				</div>
@@ -131,4 +139,5 @@ if ($isShowUnread) {
 <?php }?>
 	</select>
 </div>
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/index.js?0005"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.jeditable.mini.js"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/index.js?0010"></script>

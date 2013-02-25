@@ -25,4 +25,27 @@ class Controller extends CController
 	function init(){
 		date_default_timezone_set('Asia/Shanghai');
 	}
+	
+	public function filters()
+	{
+		return array('Login');
+	}
+	/**
+	 * 必须登录才能访问
+	 */
+	public function filterLogin($filterChain){
+		$passRoute = array(
+				'site/login',
+				'site/fetch',
+				'site/update',
+				'site/error',
+				'site/callback',
+				'site/clear'
+				);
+		if (Yii::app()->user->isGuest && !in_array($this->route, $passRoute)){
+			$this->redirect($this->createUrl('site/login'));
+		}else{
+			$filterChain->run();
+		}
+	}
 }

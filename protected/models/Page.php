@@ -58,6 +58,7 @@ class Page extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'source' => array(self::BELONGS_TO, 'Source', 'sid'),
+			'comments' => array(self::HAS_MANY, 'Comment', 'pid')
 		);
 	}
 
@@ -141,10 +142,13 @@ class Page extends CActiveRecord
 	}
 	
 	static public function clear3day(){
-		$time = time() - 3 * 3600 * 24; 
+		$time = time() - 2 * 3600 * 24; 
 		$pages = self::model()->findAll('postdate < '.$time);
 		echo count($pages);
 		foreach ($pages as $page){
+			foreach ($page->comments as $comment){
+				$comment->delete();
+			}
 			$page->delete();
 		}
 	}

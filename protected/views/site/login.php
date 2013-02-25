@@ -8,12 +8,23 @@ $this->breadcrumbs=array(
 	'Login',
 );
 ?>
+<style>
+.loginbox{
+	width:250px;
+	margin:0 auto;
+	background:#fff;
+	padding:30px;
+	box-shadow: 0px 0px 3px #ccc;
+}
+body{
+	background:#DEDED9;
+}
+</style>
+<div class="loginbox">
 
-<h1>Login</h1>
+<h2>大咖汇后台登陆</h2>
 
-<p>Please fill out the following form with your login credentials:</p>
 
-<div class="form">
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
 	'enableClientValidation'=>true,
@@ -22,32 +33,28 @@ $this->breadcrumbs=array(
 	),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<div class="row">
+	<div>
 		<?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textField($model,'username'); ?>
+		<?php echo $form->textField($model,'username',array('class'=>'input-block-level')); ?>
 		<?php echo $form->error($model,'username'); ?>
 	</div>
 
-	<div class="row">
+	<div >
 		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password'); ?>
+		<?php echo $form->passwordField($model,'password',array('class'=>'input-block-level')); ?>
 		<?php echo $form->error($model,'password'); ?>
-		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
-		</p>
 	</div>
 
-	<div class="row rememberMe">
+	<div class="rememberMe">
 		<?php echo $form->checkBox($model,'rememberMe'); ?>
 		<?php echo $form->label($model,'rememberMe'); ?>
 		<?php echo $form->error($model,'rememberMe'); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Login'); ?>
+	<div >
+		<input type="submit" value="登录" class="btn btn-block">
 	</div>
 
 <?php $this->endWidget(); ?>
-</div><!-- form -->
+</div>

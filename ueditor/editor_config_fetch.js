@@ -109,8 +109,8 @@ UEDITOR_HOME_URL : URL
 
 ,initialContent:"欢迎使用ueditor!"    //初始化编辑器的内容,也可以通过textarea/script给值，看官网例子
 
-,initialFrameWidth:800  //初始化编辑器宽度,默认1000
-,initialFrameHeight:250  //初始化编辑器高度,默认320
+//,initialFrameWidth:500  //初始化编辑器宽度,默认1000
+,initialFrameHeight:400  //初始化编辑器高度,默认320
 
 ,autoClearinitialContent: false //是否自动清除编辑器初始内容，注意：如果focus属性设置为true,这个也为真，那么编辑器一上来就会触发导致初始化的内容看不到了
 
@@ -122,7 +122,7 @@ UEDITOR_HOME_URL : URL
 
 ,focus:true //初始化时，是否让编辑器获得焦点true或false
 
-,minFrameWidth:800    //编辑器最小宽度,默认800，拖动时以这个为准
+//,minFrameWidth:800    //编辑器最小宽度,默认800，拖动时以这个为准
 ,minFrameHeight:250  //编辑器最小高度,默认220,拖动时以这个为准
 
 
